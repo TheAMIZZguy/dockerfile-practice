@@ -1,3 +1,5 @@
+# MAIN SOURCE: https://github.com/UBC-DSCI/jupyterlab/blob/main/Dockerfile as a template to practice inserting Dockerfiles in GitHub
+
 FROM continuumio/miniconda3
 
 # Install Jupyter, JupterLab, R & the IRkernel, plus pandas+numpy for datascience workflows
