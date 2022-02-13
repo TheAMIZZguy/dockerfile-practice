@@ -2,15 +2,14 @@
 
 FROM continuumio/miniconda3
 
-# Install Jupyter, JupterLab, R & the IRkernel, plus pandas with numpy and scikit for datascience workflows
+# Install Jupyter, JupterLab, R & the IRkernel, plus scikit for ai workflows
 RUN conda install --yes --quiet --channel conda-forge \
     jupyter \
     jupyterlab \
     r-base=4.1.1 \
     r-irkernel \
-    pandas \
-    numpy \
-    scikit-learn
+    
+RUN conda install -c anaconda scitkit-learn
 
 # Install JupyterLab Git Extension
 RUN pip install jupyterlab-git
