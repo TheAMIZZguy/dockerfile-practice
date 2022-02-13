@@ -9,7 +9,7 @@ RUN conda install --yes --quiet --channel conda-forge \
     r-base=4.1.1 \
     r-irkernel
     
-RUN conda install -c anaconda scitkit-learn
+RUN conda install -c anaconda scikit-learn=1.0.2
 
 # Install JupyterLab Git Extension
 RUN pip install jupyterlab-git
