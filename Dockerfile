@@ -7,7 +7,7 @@ RUN conda install --yes --quiet --channel conda-forge \
     jupyter \
     jupyterlab \
     r-base=4.1.1 \
-    r-irkernel \
+    r-irkernel
     
 RUN conda install -c anaconda scitkit-learn
 
